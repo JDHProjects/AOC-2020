@@ -12,7 +12,3 @@ def addToThree(inData):
             for k in inData:
                 if j + i + k == 2020:
                     return j*i*k
-
-print(addToTwo(data))
-
-print(addToThree(data))
