@@ -12,3 +12,8 @@ print("day 2 part 2 = "+str(len(getValidPasswordsPart2(loadData("day2")))))
 from day3.day3 import getTreeCount, multiSlope
 print("day 3 part 1 = "+str(getTreeCount(loadData("day3"),3,1)))
 print("day 3 part 2 = "+str(multiSlope(loadData("day3"),[[1,1],[3,1],[5,1],[7,1],[1,2]])))
+
+from day4.day4 import checkPassports, strictCheckPassports
+print("day 4 part 1 = "+str(len(checkPassports(loadData("day4", splitChar="\n\n")))))
+print("day 4 part 2 = "+str(len(strictCheckPassports(loadData("day4", splitChar="\n\n")))))
+

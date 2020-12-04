@@ -1,6 +1,8 @@
-def loadData(folder, parseInt=False):
+def loadData(folder, parseInt=False, splitChar="\n"):
     with open(folder+"/input.txt", "r") as file:
-        values = file.read().splitlines()
+        values = file.read().split(splitChar)
+    while("" in values):
+        values.remove("")
     if parseInt:
         valuesInt = []
         for i in values:
