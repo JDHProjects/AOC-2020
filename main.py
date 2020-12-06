@@ -20,3 +20,7 @@ print("day 4 part 2 = "+str(len(strictCheckPassports(loadData("day4", splitChar=
 from day5.day5 import findHighestBoardingPass, missingBoardingPass
 print("day 5 part 1 = "+str(findHighestBoardingPass(loadData("day5"))))
 print("day 5 part 2 = "+str(missingBoardingPass(loadData("day5"))))
+
+from day6.day6 import sumAnswers, sumUnanimousAnswers
+print("day 5 part 1 = "+str(sumAnswers(loadData("day6", splitChar="\n\n"))))
+print("day 5 part 2 = "+str(sumUnanimousAnswers(loadData("day6", splitChar="\n\n"))))

@@ -9,6 +9,3 @@ def test_binaryToInt():
 
 def test_findHighestBoardingPass():
     assert findHighestBoardingPass(testData) == 820
-
-#def test_strictCheckPassports():
-#    assert len(strictCheckPassports(strictTestData)) == 4
