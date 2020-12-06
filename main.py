@@ -17,3 +17,6 @@ from day4.day4 import checkPassports, strictCheckPassports
 print("day 4 part 1 = "+str(len(checkPassports(loadData("day4", splitChar="\n\n")))))
 print("day 4 part 2 = "+str(len(strictCheckPassports(loadData("day4", splitChar="\n\n")))))
 
+from day5.day5 import findHighestBoardingPass, missingBoardingPass
+print("day 5 part 1 = "+str(findHighestBoardingPass(loadData("day5"))))
+print("day 5 part 2 = "+str(missingBoardingPass(loadData("day5"))))
