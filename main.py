@@ -24,3 +24,7 @@ print("day 5 part 2 = "+str(missingBoardingPass(loadData("day5"))))
 from day6.day6 import sumAnswers, sumUnanimousAnswers
 print("day 5 part 1 = "+str(sumAnswers(loadData("day6", splitChar="\n\n"))))
 print("day 5 part 2 = "+str(sumUnanimousAnswers(loadData("day6", splitChar="\n\n"))))
+
+from day7.day7 import countBags, generateRules, bagsInBags
+print("day 7 part 1 = "+str(countBags(generateRules(loadData("day7")),"shiny gold")))
+print("day 7 part 1 = "+str(bagsInBags(generateRules(loadData("day7")),"shiny gold")))
