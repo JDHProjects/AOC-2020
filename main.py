@@ -28,3 +28,7 @@ print("day 5 part 2 = "+str(sumUnanimousAnswers(loadData("day6", splitChar="\n\n
 from day7.day7 import countBags, generateRules, bagsInBags
 print("day 7 part 1 = "+str(countBags(generateRules(loadData("day7")),"shiny gold")))
 print("day 7 part 1 = "+str(bagsInBags(generateRules(loadData("day7")),"shiny gold")))
+
+from day8.day8 import runInfiniteProgram, instructionList, fixProgram
+print("day 8 part 1 = "+str(runInfiniteProgram(instructionList(loadData("day8")))))
+print("day 8 part 2 = "+str(fixProgram(instructionList(loadData("day8")))))
