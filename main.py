@@ -32,3 +32,7 @@ print("day 7 part 1 = "+str(bagsInBags(generateRules(loadData("day7")),"shiny go
 from day8.day8 import runInfiniteProgram, instructionList, fixProgram
 print("day 8 part 1 = "+str(runInfiniteProgram(instructionList(loadData("day8")))))
 print("day 8 part 2 = "+str(fixProgram(instructionList(loadData("day8")))))
+
+from day9.day9 import findIncorrectNum, findValFromRange
+print("day 9 part 1 = "+str(findIncorrectNum(loadData("day9", parseInt=True),25)))
+print("day 9 part 1 = "+str(findValFromRange(loadData("day9", parseInt=True),findIncorrectNum(loadData("day9", parseInt=True),25))))
