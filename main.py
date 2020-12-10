@@ -35,4 +35,8 @@ print("day 8 part 2 = "+str(fixProgram(instructionList(loadData("day8")))))
 
 from day9.day9 import findIncorrectNum, findValFromRange
 print("day 9 part 1 = "+str(findIncorrectNum(loadData("day9", parseInt=True),25)))
-print("day 9 part 1 = "+str(findValFromRange(loadData("day9", parseInt=True),findIncorrectNum(loadData("day9", parseInt=True),25))))
+print("day 9 part 2 = "+str(findValFromRange(loadData("day9", parseInt=True),findIncorrectNum(loadData("day9", parseInt=True),25))))
+
+from day10.day10 import calculateJoltage, calculateDistinctJoltages
+print("day 10 part 1 = "+str(calculateJoltage(loadData("day10", parseInt=True))))
+print("day 10 part 2 = "+str(calculateDistinctJoltages(loadData("day10", parseInt=True))))
