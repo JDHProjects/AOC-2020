@@ -1,4 +1,4 @@
-from day1 import addToTwo, addToThree
+from day1.day1 import addToTwo, addToThree
 
 testData = [1721,979,366,299,675,1456]
 

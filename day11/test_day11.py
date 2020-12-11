@@ -1,4 +1,4 @@
-from day11 import inputToList, checkSeat, checkAllSeats, stabilizeSeats, countOccupied, checkFarSeat
+from day11.day11 import inputToList, checkSeat, checkAllSeats, stabilizeSeats, countOccupied, checkFarSeat
 
 testData = ["L.LL.LL.LL"
            ,"LLLLLLL.LL"

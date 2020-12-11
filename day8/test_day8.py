@@ -1,4 +1,4 @@
-from day8 import lineParse, instructionList, runInfiniteProgram, runProgram, fixProgram
+from day8.day8 import lineParse, instructionList, runInfiniteProgram, runProgram, fixProgram
 
 testData = ["nop +0",
             "acc +1",

@@ -1,4 +1,4 @@
-from day3 import getTreeCount, multiSlope
+from day3.day3 import getTreeCount, multiSlope
 
 testData = ["..##.......","#...#...#..",".#....#..#.","..#.#...#.#",".#...##..#.","..#.##.....",".#.#.#....#",".#........#","#.##...#...","#...##....#",".#..#...#.#"]
 

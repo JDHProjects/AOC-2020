@@ -1,4 +1,4 @@
-from day2 import lineParse, getValidPasswordsPart1, getValidPasswordsPart2
+from day2.day2 import lineParse, getValidPasswordsPart1, getValidPasswordsPart2
 
 testData = ["1-3 a: abcde","1-3 b: cdefg","2-9 c: ccccccccc"]
 

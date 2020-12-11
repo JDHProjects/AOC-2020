@@ -1,4 +1,4 @@
-from day10 import calculateJoltage, calculateDistinctJoltages, calculateJoltageGroups
+from day10.day10 import calculateJoltage, calculateDistinctJoltages, calculateJoltageGroups
 
 testData = [16,10,15,5,1,11,7,19,6,12,4]
 

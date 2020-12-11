@@ -1,4 +1,4 @@
-from day6 import groupParse, groupUnanimousParse, sumAnswers, sumUnanimousAnswers
+from day6.day6 import groupParse, groupUnanimousParse, sumAnswers, sumUnanimousAnswers
 testData = ["abc","a\nb\nc","ab\nac","a\na\na\na","b"]
 
 def test_groupParse1():

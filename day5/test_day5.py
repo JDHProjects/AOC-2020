@@ -1,4 +1,4 @@
-from day5 import boardingPassParse, binaryToInt, findHighestBoardingPass
+from day5.day5 import boardingPassParse, binaryToInt, findHighestBoardingPass
 testData = ["BFFFBBFRRR","FFFBBBFRRR","BBFFBBFRLL"]
 
 def test_boardingPassParse():

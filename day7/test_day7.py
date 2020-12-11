@@ -1,4 +1,4 @@
-from day7 import bagParse, generateRules, simplifyRules, countBags, bagsInBags
+from day7.day7 import bagParse, generateRules, simplifyRules, countBags, bagsInBags
 
 testData = ["light red bags contain 1 bright white bag, 2 muted yellow bags.",
             "dark orange bags contain 3 bright white bags, 4 muted yellow bags.",
