@@ -1,21 +1,18 @@
 from copy import deepcopy
 
 def inputToList(inData):
-    fullList = []
-    for line in inData:
-        row = []
-        for char in line:
-            row.append(char)
-        fullList.append(row)
-    return fullList
+    return list(map(list,inData))
 
-def stabilizeSeats(layout,part2=False):
-    prevLayout = layout
-    newLayout = checkAllSeats(layout,part2)
-    while (newLayout != prevLayout):
-        prevLayout = deepcopy(newLayout)
-        newLayout = checkAllSeats(newLayout,part2)
-    return newLayout
+def stabilizeSeats(layoutOne,part2=False):
+    layoutTwo = checkAllSeats(layoutOne,part2)
+    flipflop = False
+    while (layoutOne != layoutTwo):
+        if(flipflop):
+            layoutTwo = checkAllSeats(layoutOne,part2)
+        else:
+            layoutOne = checkAllSeats(layoutTwo,part2)
+        flipflop = not flipflop
+    return layoutOne
 
 def countOccupied(layout):
     count = 0
@@ -26,8 +23,9 @@ def countOccupied(layout):
     return count
 
 def checkAllSeats(layout,part2=False):
-    newLayout = deepcopy(layout)
+    newLayout = []
     for y in range(0,len(layout)):
+        newLayoutRow = []
         for x in range(0,len(layout[y])):
             if(part2):
                 current = checkFarSeat(layout,x,y)
@@ -35,9 +33,12 @@ def checkAllSeats(layout,part2=False):
                 current = checkSeat(layout,x,y)
             if(layout[y][x] != "."):
                 if (current):
-                    newLayout[y][x] = "#"
+                    newLayoutRow.append("#")
                 else:
-                    newLayout[y][x] = "L"
+                    newLayoutRow.append("L")
+            else:
+                newLayoutRow.append(".")
+        newLayout.append(newLayoutRow)
     return newLayout
 
 def checkSeat(layout, x, y):
