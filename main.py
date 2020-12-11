@@ -40,3 +40,7 @@ print("day 9 part 2 = "+str(findValFromRange(loadData("day9", parseInt=True),fin
 from day10.day10 import calculateJoltage, calculateDistinctJoltages
 print("day 10 part 1 = "+str(calculateJoltage(loadData("day10", parseInt=True))))
 print("day 10 part 2 = "+str(calculateDistinctJoltages(loadData("day10", parseInt=True))))
+
+from day11.day11 import inputToList, countOccupied, stabilizeSeats
+print("day 11 part 1 = "+str(countOccupied(stabilizeSeats(inputToList(loadData("day11"))))))
+print("day 11 part 2 = "+str(countOccupied(stabilizeSeats(inputToList(loadData("day11")),part2=True))))
