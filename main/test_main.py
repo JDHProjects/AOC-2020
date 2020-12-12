@@ -71,3 +71,11 @@ def test_day_11_1():
     print(countOccupied(stabilizeSeats(inputToList(loadData("day11")))))
 def test_day_11_2():
     print(countOccupied(stabilizeSeats(inputToList(loadData("day11")),part2=True)))
+
+from day12.day12 import moveBoatThroughPath, getManhattanDistance
+def test_day_12_1():
+    (x, y) = moveBoatThroughPath(loadData("day12"),0,0,0,0)
+    print(getManhattanDistance(0,0,x,y))
+def test_day_12_2():
+    (x, y) = moveBoatThroughPath(loadData("day12"),10,1,0,0)
+    print(getManhattanDistance(0,0,x,y))
