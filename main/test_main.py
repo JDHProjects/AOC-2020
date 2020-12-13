@@ -79,3 +79,13 @@ def test_day_12_1():
 def test_day_12_2():
     (x, y) = moveBoatThroughPath(loadData("day12"),10,1,0,0)
     print(getManhattanDistance(0,0,x,y))
+
+    
+
+from day13.day13 import parseBuses, getNextBus
+def test_day_13_1():
+    (timestamp, buses) = parseBuses(loadData("day13"))
+    (bus, wait) = getNextBus(timestamp,buses)
+    print(bus * wait)
+def test_day_13_2():
+    print("come back to this :(")
