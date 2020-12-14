@@ -1,4 +1,4 @@
-from day13.day13 import parseBuses, getNextBus, parseAllBuses
+from day13.day13 import parseBuses, getNextBus
 
 testData = ["939",
             "7,13,x,x,59,x,31,19"]
